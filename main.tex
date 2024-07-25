@@ -1,0 +1,232 @@
+\documentclass{beamer}
+\usetheme{Berlin}
+
+% Define custom colors
+\definecolor{navy}{RGB}{0,0,128}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{white}{RGB}{255,255,255}
+
+% Apply the colors to various elements
+\setbeamercolor{structure}{fg=navy}
+\setbeamercolor{palette primary}{bg=navy, fg=white}
+\setbeamercolor{palette secondary}{bg=lightblue, fg=black}
+\setbeamercolor{palette tertiary}{bg=navy, fg=white}
+\setbeamercolor{palette quaternary}{bg=lightblue, fg=black}
+\setbeamercolor{frametitle}{bg=navy, fg=white}
+\setbeamercolor{title}{fg=navy, bg=white} % Ensure title is visible
+
+\title{ESG KPIs for Monitoring}
+\author{Katsiaryna Bahamazava, PhD.}
+\institute{Mathematical department of Politecnico di Torino}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Introduction}
+\begin{itemize}
+    \item ESG (Environmental, Social, and Governance) KPIs help companies measure their performance in sustainable and ethical practices.
+    \item This presentation covers examples of KPIs for Environmental, Social, and Governance aspects.
+    \item We will also demonstrate how AI can predict KPIs using the turnover rate as an example.
+\end{itemize}
+\end{frame}
+
+\section{Environmental KPIs}
+
+\begin{frame}
+\frametitle{Environmental KPIs}
+\begin{itemize}
+    \item \textbf{GHG Emissions}
+        \begin{itemize}
+            \item Measures the total greenhouse gases emitted by the company.
+            \item Example: Reduce GHG emissions by 25\% by 2025.
+        \end{itemize}
+    \item \textbf{Energy Consumption}
+        \begin{itemize}
+            \item Tracks the total energy used by the company from all sources (electricity, gas, renewable energy, etc.).
+            \item Example: Report total energy consumption in MWh annually.
+        \end{itemize}
+    \item \textbf{Water Consumption}
+        \begin{itemize}
+            \item Measures the total amount of water used by the company.
+            \item Example: Report total water usage in cubic meters annually.
+        \end{itemize}
+    \item \textbf{Waste Generated}
+        \begin{itemize}
+            \item Measures the total amount of waste produced.
+            \item Example: Report total waste generated in metric tons annually.
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Social KPIs}
+
+\begin{frame}
+\frametitle{Social KPIs}
+\begin{itemize}
+    \item \textbf{Turnover Rates}
+        \begin{itemize}
+            \item Measures the rate at which employees leave the company.
+            \item Example: Reduce turnover rates by 15\% by 2023.
+        \end{itemize}
+    \item \textbf{Percentage of Diverse Employees}
+        \begin{itemize}
+            \item Tracks diversity in the workforce.
+            \item Example: Increase percentage of diverse employees by 20\% by 2024.
+        \end{itemize}
+    \item \textbf{Pay Equity Ratios}
+        \begin{itemize}
+            \item Measures the pay gap between different groups.
+            \item Example: Achieve pay equity by 2025.
+        \end{itemize}
+    \item \textbf{Number of Product Recalls}
+        \begin{itemize}
+            \item Measures the number of product recalls due to safety issues.
+            \item Example: Maintain zero product recalls annually.
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Governance KPIs}
+
+\begin{frame}
+\frametitle{Governance KPIs}
+\begin{itemize}
+    \item \textbf{Board Diversity}
+        \begin{itemize}
+            \item Measures diversity within the company's board.
+            \item Example: Achieve 40\% board diversity by 2023.
+        \end{itemize}
+    \item \textbf{Number of Ethical Training Hours}
+        \begin{itemize}
+            \item Measures the total hours of ethical training completed by employees.
+            \item Example: Increase ethical training hours by 30\% by 2024.
+        \end{itemize}
+    \item \textbf{Number of Data Breaches}
+        \begin{itemize}
+            \item Measures the number of data breaches the company experiences.
+            \item Example: Maintain zero data breaches annually.
+        \end{itemize}
+    \item \textbf{Response Time to Data Breaches}
+        \begin{itemize}
+            \item Measures the time taken to respond to data breaches.
+            \item Example: Reduce average response time to data breaches to under 24 hours.
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Predicting KPIs with AI}
+
+\begin{frame}
+\frametitle{Predicting KPIs with AI}
+\begin{itemize}
+    \item AI can be used to predict various company KPIs, improving decision-making and strategy.
+    \item Example: Predicting employee turnover rate.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Predicting Employee Turnover with AI}
+\begin{itemize}
+    \item Use AI and machine learning to predict employee turnover rates.
+    \item Key steps in the prediction pipeline:
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Step 1: Data Collection}
+\begin{itemize}
+    \item Collect relevant employee data:
+        \begin{itemize}
+            \item Demographic data (age, gender, marital status).
+            \item Job-related data (role, department, salary, tenure).
+            \item Performance data (job satisfaction, performance rating).
+            \item Work environment data (work-life balance, work hours).
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Step 2: Data Preprocessing}
+\begin{itemize}
+    \item Clean and preprocess the data:
+        \begin{itemize}
+            \item Handle missing values.
+            \item Encode categorical variables.
+            \item Scale numerical features.
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Step 3: Feature Engineering}
+\begin{itemize}
+    \item Create new features if necessary:
+        \begin{itemize}
+            \item Interaction terms.
+            \item Transformations of existing features.
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Step 4: Model Training}
+\begin{itemize}
+    \item Train a neural network model:
+        \begin{itemize}
+            \item Define the neural network architecture.
+            \item Compile the model with appropriate loss function and optimizer.
+            \item Train the model on the training dataset.
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Step 5: Model Evaluation}
+\begin{itemize}
+    \item Evaluate the model using test data:
+        \begin{itemize}
+            \item Calculate metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
+            \item Plot training history to observe performance over epochs.
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Step 6: Prediction}
+\begin{itemize}
+    \item Use the trained model to predict turnover on new data.
+    \item Implement the model into the company's HR management system for real-time predictions.
+\end{itemize}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}
+\frametitle{Conclusion}
+\begin{itemize}
+    \item Monitoring ESG KPIs helps companies improve sustainability and ethical practices.
+    \item Setting clear goals and tracking progress is essential for achieving ESG objectives.
+    \item Predicting employee turnover using AI demonstrates how AI can be used to predict other company KPIs.
+    \item Regular reporting and alignment with standards enhance transparency and accountability.
+\end{itemize}
+\end{frame}
+
+\section{License}
+
+\begin{frame}
+\frametitle{License}
+\begin{itemize}
+    \item  This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+    \item You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    \item You may not use the material for commercial purposes.
+    \item If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+\end{itemize}
+\includegraphics[width=1.5cm]{heart.red.png}
+\end{frame}
+
+\end{document}
