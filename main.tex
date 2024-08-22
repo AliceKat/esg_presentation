@@ -15,9 +15,9 @@
 \setbeamercolor{frametitle}{bg=navy, fg=white}
 \setbeamercolor{title}{fg=navy, bg=white} % Ensure title is visible
 
-\title{ESG KPIs for Monitoring}
+\title{ESG KPIs for Monitoring Water Usage}
 \author{Katsiaryna Bahamazava, PhD.}
-\institute{Mathematical department of Politecnico di Torino}
+\institute{Mathematical Department of Politecnico di Torino}
 \date{\today}
 
 \begin{document}
@@ -30,8 +30,8 @@
 \frametitle{Introduction}
 \begin{itemize}
     \item ESG (Environmental, Social, and Governance) KPIs help companies measure their performance in sustainable and ethical practices.
-    \item This presentation covers examples of KPIs for Environmental, Social, and Governance aspects.
-    \item We will also demonstrate how AI can predict KPIs using the turnover rate as an example.
+    \item This presentation focuses on water usage as a critical environmental KPI.
+    \item We will demonstrate how AI can be utilized to predict water usage and improve sustainability efforts.
 \end{itemize}
 \end{frame}
 
@@ -40,6 +40,11 @@
 \begin{frame}
 \frametitle{Environmental KPIs}
 \begin{itemize}
+    \item \textbf{Water Usage}
+        \begin{itemize}
+            \item Measures the total amount of water used by the company.
+            \item Example: Track water usage in cubic meters annually and implement strategies to reduce consumption.
+        \end{itemize}
     \item \textbf{GHG Emissions}
         \begin{itemize}
             \item Measures the total greenhouse gases emitted by the company.
@@ -50,11 +55,6 @@
             \item Tracks the total energy used by the company from all sources (electricity, gas, renewable energy, etc.).
             \item Example: Report total energy consumption in MWh annually.
         \end{itemize}
-    \item \textbf{Water Consumption}
-        \begin{itemize}
-            \item Measures the total amount of water used by the company.
-            \item Example: Report total water usage in cubic meters annually.
-        \end{itemize}
     \item \textbf{Waste Generated}
         \begin{itemize}
             \item Measures the total amount of waste produced.
@@ -63,89 +63,25 @@
 \end{itemize}
 \end{frame}
 
-\section{Social KPIs}
+\section{Predicting Water Usage with AI}
 
 \begin{frame}
-\frametitle{Social KPIs}
+\frametitle{Predicting Water Usage with AI}
 \begin{itemize}
-    \item \textbf{Turnover Rates}
-        \begin{itemize}
-            \item Measures the rate at which employees leave the company.
-            \item Example: Reduce turnover rates by 15\% by 2023.
-        \end{itemize}
-    \item \textbf{Percentage of Diverse Employees}
-        \begin{itemize}
-            \item Tracks diversity in the workforce.
-            \item Example: Increase percentage of diverse employees by 20\% by 2024.
-        \end{itemize}
-    \item \textbf{Pay Equity Ratios}
-        \begin{itemize}
-            \item Measures the pay gap between different groups.
-            \item Example: Achieve pay equity by 2025.
-        \end{itemize}
-    \item \textbf{Number of Product Recalls}
-        \begin{itemize}
-            \item Measures the number of product recalls due to safety issues.
-            \item Example: Maintain zero product recalls annually.
-        \end{itemize}
-\end{itemize}
-\end{frame}
-
-\section{Governance KPIs}
-
-\begin{frame}
-\frametitle{Governance KPIs}
-\begin{itemize}
-    \item \textbf{Board Diversity}
-        \begin{itemize}
-            \item Measures diversity within the company's board.
-            \item Example: Achieve 40\% board diversity by 2023.
-        \end{itemize}
-    \item \textbf{Number of Ethical Training Hours}
-        \begin{itemize}
-            \item Measures the total hours of ethical training completed by employees.
-            \item Example: Increase ethical training hours by 30\% by 2024.
-        \end{itemize}
-    \item \textbf{Number of Data Breaches}
-        \begin{itemize}
-            \item Measures the number of data breaches the company experiences.
-            \item Example: Maintain zero data breaches annually.
-        \end{itemize}
-    \item \textbf{Response Time to Data Breaches}
-        \begin{itemize}
-            \item Measures the time taken to respond to data breaches.
-            \item Example: Reduce average response time to data breaches to under 24 hours.
-        \end{itemize}
-\end{itemize}
-\end{frame}
-
-\section{Predicting KPIs with AI}
-
-\begin{frame}
-\frametitle{Predicting KPIs with AI}
-\begin{itemize}
-    \item AI can be used to predict various company KPIs, improving decision-making and strategy.
-    \item Example: Predicting employee turnover rate.
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Predicting Employee Turnover with AI}
-\begin{itemize}
-    \item Use AI and machine learning to predict employee turnover rates.
-    \item Key steps in the prediction pipeline:
+    \item AI can be used to predict water usage, enabling proactive management and resource optimization.
+    \item Key steps in the prediction process:
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Step 1: Data Collection}
 \begin{itemize}
-    \item Collect relevant employee data:
+    \item Collect relevant data for water usage prediction:
         \begin{itemize}
-            \item Demographic data (age, gender, marital status).
-            \item Job-related data (role, department, salary, tenure).
-            \item Performance data (job satisfaction, performance rating).
-            \item Work environment data (work-life balance, work hours).
+            \item Historical water usage data.
+            \item Environmental data (temperature, humidity).
+            \item Production data (production levels, operational hours).
+            \item Workforce data (number of employees, shifts).
         \end{itemize}
 \end{itemize}
 \end{frame}
@@ -165,10 +101,11 @@
 \begin{frame}
 \frametitle{Step 3: Feature Engineering}
 \begin{itemize}
-    \item Create new features if necessary:
+    \item Create new features to improve the model's accuracy:
         \begin{itemize}
-            \item Interaction terms.
-            \item Transformations of existing features.
+            \item Seasonal components (e.g., monthly averages).
+            \item Lag features (e.g., water usage from previous weeks).
+            \item Interaction terms (e.g., interaction between temperature and production level).
         \end{itemize}
 \end{itemize}
 \end{frame}
@@ -176,7 +113,7 @@
 \begin{frame}
 \frametitle{Step 4: Model Training}
 \begin{itemize}
-    \item Train a neural network model:
+    \item Train a neural network model to predict water usage:
         \begin{itemize}
             \item Define the neural network architecture.
             \item Compile the model with appropriate loss function and optimizer.
@@ -190,17 +127,21 @@
 \begin{itemize}
     \item Evaluate the model using test data:
         \begin{itemize}
-            \item Calculate metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
+            \item Calculate metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared.
             \item Plot training history to observe performance over epochs.
         \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Step 6: Prediction}
+\frametitle{Step 6: Prediction and Scenario Analysis}
 \begin{itemize}
-    \item Use the trained model to predict turnover on new data.
-    \item Implement the model into the company's HR management system for real-time predictions.
+    \item Use the trained model to predict water usage under various scenarios:
+        \begin{itemize}
+            \item Predict future water usage based on planned production increases.
+            \item Assess the impact of environmental changes on water usage.
+        \end{itemize}
+    \item Implement these predictions into the company's resource management strategy.
 \end{itemize}
 \end{frame}
 
@@ -209,10 +150,9 @@
 \begin{frame}
 \frametitle{Conclusion}
 \begin{itemize}
-    \item Monitoring ESG KPIs helps companies improve sustainability and ethical practices.
-    \item Setting clear goals and tracking progress is essential for achieving ESG objectives.
-    \item Predicting employee turnover using AI demonstrates how AI can be used to predict other company KPIs.
-    \item Regular reporting and alignment with standards enhance transparency and accountability.
+    \item Monitoring and predicting water usage is crucial for sustainable resource management.
+    \item AI-powered predictions allow for proactive decision-making and improved efficiency.
+    \item Regularly updating and refining the model ensures it remains accurate and valuable.
 \end{itemize}
 \end{frame}
 
@@ -221,7 +161,7 @@
 \begin{frame}
 \frametitle{License}
 \begin{itemize}
-    \item  This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+    \item This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
     \item You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
     \item You may not use the material for commercial purposes.
     \item If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
